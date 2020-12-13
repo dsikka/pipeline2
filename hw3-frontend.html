@@ -43,7 +43,7 @@
 	<script>
 	  const MAX_IMAGE_SIZE = 10000000
 
-	  const API_ENDPOINT = 'https://4w884yo9lc.execute-api.us-east-1.amazonaws.com/default/upload-photos'
+	  const API_ENDPOINT = 'https://4w884yo9lc.execute-api.us-east-1.amazonaws.com/default/upload-photos-2'
 
 	  new Vue({
 		el: "#app",
@@ -106,7 +106,7 @@
 			const queryStr = document.getElementById('input').value
 			const response = await axios({
 			  method: 'GET',
-			  url: "https://4w884yo9lc.execute-api.us-east-1.amazonaws.com/default/get-photo-request?query_string=" + queryStr
+			  url: "https://4w884yo9lc.execute-api.us-east-1.amazonaws.com/default/get-photo-request-2?query_string=" + queryStr
 			})
 			if (response['message']['pics'].length > 0) {
 				this.picToDisplay=true
